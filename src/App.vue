@@ -1,16 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <DataView msg="你也好"></DataView>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LoginPage/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import DataView from "@/components/DataView.vue";
+import LoginPage  from "@/page/Login.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld,DataView
+    LoginPage,
   }
 }
 </script>
@@ -22,6 +19,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
