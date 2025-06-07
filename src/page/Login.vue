@@ -55,6 +55,7 @@ export default {
           res=res.data;
           if(res.code==200){
             this.$message.success("登陆成功")
+            localStorage.setItem("token",res.token)
             this.$router.push("/home");
           }
           else {

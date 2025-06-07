@@ -12,6 +12,14 @@ const routes = [
         path: "/home",
         name: "home",
         component: () => import("../page/Home.vue"),
+        children:[
+            {
+                path: "/userlist",
+                name: "userlist",
+                component: () => import("../page/HomeChildren/UserList.vue"),
+            }
+        ]
+
     },
 ];
 // 创建路由
